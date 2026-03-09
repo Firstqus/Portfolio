@@ -582,3 +582,40 @@ p{
 
     z-index:0;
 }
+
+@media (max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-image img{
+width:220px;
+transform:none;
+margin-top:20px;
+}
+
+.hero-text h1{
+font-size:32px;
+margin-top:0;
+}
+
+.hero-text h2{
+font-size:32px;
+}
+
+.project-card{
+flex-direction:column;
+}
+
+.project-slider{
+width:100%;
+}
+
+.nav-links{
+gap:15px;
+font-size:14px;
+}
+
+}
