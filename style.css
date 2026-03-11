@@ -81,13 +81,13 @@ p{
 }
 .hero-text h1{
     font-size:48px;
-    margin-top: 0px;
+    margin-top:-220px;
 }
 
 .hero-text h2{
     font-size:48px;
     color:#6f0ede;
-    margin-top: 0 px;
+    margin-top:-40px
 }
 
 .btn-hero{
@@ -125,11 +125,11 @@ p{
 
 .hero-bg-text{
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     
-    font-size: clamp(60px, 15vw, 220px); /* ← เปลี่ยนอันนี้ */
+    font-size: clamp(60px, 15vw, 220px);
     font-weight: 800;
     letter-spacing: 10px;
 
@@ -137,7 +137,9 @@ p{
 
     white-space: nowrap;
     pointer-events: none;
+
     z-index: 0;
+
     transition: transform 0.1s ease-out;
 }
 
@@ -443,7 +445,7 @@ p{
     border:2px solid #fc4c4cc7;
     border-radius:50%;
     top:150px;
-    right: 5%;
+    left:1300px;
 }
 
 .square{
@@ -481,9 +483,37 @@ p{
     z-index:0;
 }
 
+.my-projectbg{
+    align-items: center;
+    margin-left: 330px;
+    margin-top:-110px;
+    font-size:70px;
+    font-weight:800;
+    letter-spacing:4px;
 
+    color:rgba(255, 255, 255, 0.147);
 
+    white-space:nowrap;
+    pointer-events:none;
 
+    z-index:0;
+}
+
+.skill-bg{
+    align-items: center;
+    margin-left: 250px;
+    margin-top:-180px;
+    font-size:70px;
+    font-weight:800;
+    letter-spacing:4px;
+
+    color:rgba(255, 255, 255, 0.147);
+
+    white-space:nowrap;
+    pointer-events:none;
+
+    z-index:0;
+}
 
 .skill-box h3{
     display:inline-block;
@@ -509,7 +539,21 @@ p{
     color: #6f0ede;
 }
 
+.ctf-bg{
+    align-items: center;
+    margin-left: 100px;
+    margin-top:-180px;
+    font-size:70px;
+    font-weight:800;
+    letter-spacing:4px;
 
+    color:rgba(255, 255, 255, 0.147);
+
+    white-space:nowrap;
+    pointer-events:none;
+
+    z-index:0;
+}
 
 .section-title{
     text-align: center;
@@ -519,6 +563,29 @@ p{
 
 .section-title span{
     color: #6f0ede;
+}
+
+.contact-bg{
+    align-items: center;
+    margin-left: 200px;
+    margin-top:-180px;
+    font-size:70px;
+    font-weight:800;
+    letter-spacing:4px;
+
+    color:rgba(255, 255, 255, 0.147);
+
+    white-space:nowrap;
+    pointer-events:none;
+
+    z-index:0;
+}
+
+.my-project,
+.skills,
+.certificates,
+.contact {
+    position: relative;
 }
 
 .my-projectbg,
@@ -538,79 +605,21 @@ p{
     z-index: 0;
 }
 
-@media (max-width:768px){
-
-.hero{
-flex-direction:column;
-text-align:center;
-}
-
-.hero-image img{
-width:220px;
-transform:none;
-margin-top:20px;
-}
-
-.hero-text h1{
-font-size:32px;
-margin-top:0;
-}
-
-.hero-text h2{
-font-size:32px;
-}
-
-.project-card{
-flex-direction:column;
-}
-
-.project-slider{
-width:100%;
-}
-
-.nav-links{
-gap:15px;
-font-size:14px;
-}
-
-}
-
-.my-project,
-.skills,
-.certificates,
-.contact {
-    position: relative;
-}
-
 @media (max-width: 768px) {
 
-    /* ซ่อน background text ทั้งหมดบนมือถือ */
     .hero-bg-text,
     .about-mebackground,
     .my-projectbg,
     .skill-bg,
     .ctf-bg,
     .contact-bg {
-        display: none;
+        display: none !important;
     }
 
-    /* About section — เรียงเป็นคอลัมน์เดียว */
-    .about-container {
-        flex-direction: column;
-    }
-
-    .about-img img {
-        width: 100%;
-    }
-
-    .about-info2 {
-        margin-left: 0;
-    }
-
-    /* Hero — รูปขึ้นก่อน text */
     .hero {
         flex-direction: column-reverse;
         padding: 60px 5%;
+        text-align: center;
     }
 
     .hero-image img {
@@ -625,7 +634,31 @@ font-size:14px;
         margin-top: 0;
     }
 
-    /* Navbar */
+    .about h2 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .about-info2 {
+        margin-left: 0;
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-slider {
+        width: 100%;
+    }
+
     .navbar {
         flex-wrap: wrap;
         gap: 10px;
@@ -638,8 +671,21 @@ font-size:14px;
         flex-wrap: wrap;
     }
 
-    /* Section padding ลดลง */
     section {
         padding: 60px 5%;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+
+    .certificate-container {
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .contact-container {
+        margin-top: 30px;
     }
 }
