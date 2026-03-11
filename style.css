@@ -81,13 +81,13 @@ p{
 }
 .hero-text h1{
     font-size:48px;
-    margin-top:-220px;
+    margin-top: 0;
 }
 
 .hero-text h2{
     font-size:48px;
     color:#6f0ede;
-    margin-top:-40px
+    margin-top: 0;
 }
 
 .btn-hero{
@@ -445,7 +445,7 @@ p{
     border:2px solid #fc4c4cc7;
     border-radius:50%;
     top:150px;
-    left:1300px;
+    right: 5%;
 }
 
 .square{
@@ -453,8 +453,8 @@ p{
     width:30px;
     height:30px;
     border:2px solid #fc4c4cc7;
-    top:600px;
-    left:400px;
+    top:300px;
+    right: 8%;
 }
 
 .shape{
@@ -474,38 +474,6 @@ p{
     font-size:80px;
     font-weight:800;
     letter-spacing:3px;
-
-    color:rgba(255, 255, 255, 0.147);
-
-    white-space:nowrap;
-    pointer-events:none;
-
-    z-index:0;
-}
-
-.my-projectbg{
-    align-items: center;
-    margin-left: 330px;
-    margin-top:-110px;
-    font-size:70px;
-    font-weight:800;
-    letter-spacing:4px;
-
-    color:rgba(255, 255, 255, 0.147);
-
-    white-space:nowrap;
-    pointer-events:none;
-
-    z-index:0;
-}
-
-.skill-bg{
-    align-items: center;
-    margin-left: 250px;
-    margin-top:-180px;
-    font-size:70px;
-    font-weight:800;
-    letter-spacing:4px;
 
     color:rgba(255, 255, 255, 0.147);
 
@@ -539,22 +507,6 @@ p{
     color: #6f0ede;
 }
 
-.ctf-bg{
-    align-items: center;
-    margin-left: 100px;
-    margin-top:-180px;
-    font-size:70px;
-    font-weight:800;
-    letter-spacing:4px;
-
-    color:rgba(255, 255, 255, 0.147);
-
-    white-space:nowrap;
-    pointer-events:none;
-
-    z-index:0;
-}
-
 .section-title{
     text-align: center;
     font-size:44px;
@@ -563,22 +515,6 @@ p{
 
 .section-title span{
     color: #6f0ede;
-}
-
-.contact-bg{
-    align-items: center;
-    margin-left: 200px;
-    margin-top:-180px;
-    font-size:70px;
-    font-weight:800;
-    letter-spacing:4px;
-
-    color:rgba(255, 255, 255, 0.147);
-
-    white-space:nowrap;
-    pointer-events:none;
-
-    z-index:0;
 }
 
 .my-project,
@@ -614,6 +550,11 @@ p{
     .ctf-bg,
     .contact-bg {
         display: none !important;
+    }
+
+    .circle,
+    .square {
+        display: none;
     }
 
     .hero {
