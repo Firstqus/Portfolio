@@ -129,7 +129,7 @@ p{
     left: 50%;
     transform: translateX(-50%);
     
-    font-size: 220px;
+    font-size: clamp(60px, 15vw, 220px); /* ← เปลี่ยนอันนี้ */
     font-weight: 800;
     letter-spacing: 10px;
 
@@ -137,12 +137,8 @@ p{
 
     white-space: nowrap;
     pointer-events: none;
-
     z-index: 0;
-
     transition: transform 0.1s ease-out;
-    margin-top:-200px;
-    margin-left: 100px;
 }
 
 .hero-text h1{
@@ -584,4 +580,66 @@ font-size:14px;
 .certificates,
 .contact {
     position: relative;
+}
+
+@media (max-width: 768px) {
+
+    /* ซ่อน background text ทั้งหมดบนมือถือ */
+    .hero-bg-text,
+    .about-mebackground,
+    .my-projectbg,
+    .skill-bg,
+    .ctf-bg,
+    .contact-bg {
+        display: none;
+    }
+
+    /* About section — เรียงเป็นคอลัมน์เดียว */
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .about-info2 {
+        margin-left: 0;
+    }
+
+    /* Hero — รูปขึ้นก่อน text */
+    .hero {
+        flex-direction: column-reverse;
+        padding: 60px 5%;
+    }
+
+    .hero-image img {
+        width: 200px;
+        transform: none;
+        margin-bottom: 20px;
+    }
+
+    .hero-text h1,
+    .hero-text h2 {
+        font-size: 32px;
+        margin-top: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 15px 5%;
+    }
+
+    .nav-links {
+        gap: 10px;
+        font-size: 13px;
+        flex-wrap: wrap;
+    }
+
+    /* Section padding ลดลง */
+    section {
+        padding: 60px 5%;
+    }
 }
