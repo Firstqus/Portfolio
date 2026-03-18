@@ -238,7 +238,7 @@ p{
 
 .contact-me,
 .project{
-    margin-top:10px;
+    margin-top:100px;
     padding:10px 20px;
     border:none;
     border-radius:8px;
@@ -398,7 +398,7 @@ p{
 
 .contact-container{
     text-align:center;
-    margin-top:100px;
+    margin-top:60px;
 }
 
 .contact-social{
@@ -511,6 +511,7 @@ p{
 .ctf-title{
     text-align: center;
     font-size:44px;
+    margin-top: 70px;
 }
 
 .ctf-title span{
@@ -518,6 +519,7 @@ p{
 }
 
 .section-title{
+    margin-top: 66px;
     text-align: center;
     font-size:44px;
     letter-spacing: 4px;
@@ -532,6 +534,22 @@ p{
 .certificates,
 .contact {
     position: relative;
+}
+
+.certificate-container{
+    margin-top: 50px;
+}
+
+.myproject-title{
+    margin-top: -20px;
+}
+
+.skill-bg{
+    margin-top: -20px;
+}
+
+.my-projectbg{
+    margin-top: -100px;
 }
 
 .my-projectbg,
