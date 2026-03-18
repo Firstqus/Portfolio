@@ -58,3 +58,11 @@ sliders.forEach(slider => {
     }, 3000);
 
 });
+
+function toggleCertificates() {
+    const hiddenCards = document.querySelectorAll('.certificate-card.hidden');
+    const btn = document.getElementById('showMoreBtn');
+
+    hiddenCards.forEach(card => card.classList.remove('hidden'));
+    btn.style.display = 'none'; // ซ่อนปุ่มหลังกด
+}

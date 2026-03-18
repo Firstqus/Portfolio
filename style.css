@@ -383,6 +383,7 @@ p{
 }
 
 .certificate-card{
+    margin-left: 36px;
     background:#0f172a;
     padding:20px;
     border-radius:12px;
@@ -657,4 +658,35 @@ p{
     .contact-container {
         margin-top: 30px;
     }
+}
+
+.show-more {
+    text-align: center;
+}
+
+.show-more button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.show-more:hover button{
+    color: #6f0ede;
+}
+
+.show-more {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top:40px;
+}
+
+.certificate-card.hidden {
+    display: none;
 }
