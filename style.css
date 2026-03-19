@@ -380,6 +380,8 @@ p{
     gap:25px;
     flex-wrap:wrap;
     margin-top:150px;
+    align-items: center;
+    text-align: center;
 }
 
 .certificate-card{
