@@ -382,6 +382,14 @@ p{
     justify-content: center;
 }
 
+@media (max-width: 768px){
+    .certificate-container {
+        display:flex;
+        gap:25px;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+}
 .certificate-card{
     margin-left: 36px;
     background:#0f172a;
