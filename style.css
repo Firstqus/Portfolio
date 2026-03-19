@@ -379,9 +379,7 @@ p{
     display:flex;
     gap:25px;
     flex-wrap:wrap;
-    margin-top:150px;
-    align-items: center;
-    text-align: center;
+    justify-content: center;
 }
 
 .certificate-card{
