@@ -521,7 +521,7 @@ p{
 .ctf-title{
     text-align: center;
     font-size:44px;
-    margin-top: 70px;
+    margin-top:80px;
 }
 
 .ctf-title span{
@@ -686,7 +686,7 @@ p{
 }
 
 .show-more:hover button{
-    color: #6f0ede;
+    color: #a855f7;
 }
 
 .show-more {
@@ -698,4 +698,8 @@ p{
 
 .certificate-card.hidden {
     display: none;
+}
+
+.show-more-button span{
+    color:#6f0ede;
 }
